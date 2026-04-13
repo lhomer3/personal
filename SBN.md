@@ -16,7 +16,7 @@ Webova aplikacia pre manazovanie kurzov a prihlasovanie sa na kurzy tanecnej sko
 - users si mozu vytvarat a manazovat svoje pouzivatelske ucty
 - user si moze menit heslo
 - student sa moze prihlasit/odhlasit na dostupne kurzy
-- admin moze vytvarat tanecne kurzy ako objekt(template) s parametrami
+- admin moze vytvarat tanecne kurzy ako objekt(template) s parametrami (nemoze mazat)
 - kurzy maju level podla ktoreho su alebo nie su dostupne studentom
 - admin moze planovat tanecne kurzy do rozvrhu
 - admin moze kontrolovat dochadzku ziakov cez admin UI
@@ -24,6 +24,7 @@ Webova aplikacia pre manazovanie kurzov a prihlasovanie sa na kurzy tanecnej sko
 - teacher a admin vidia neverejnu cast profilu ziakov na zdielanie internych informacii
 - pouzivatelia mozu dostavat email notifikacie
 - pouzivatelia mozu dostavat push notifikacie
+- automaticky trigerovane notifikacie (napriklad neotvoreny kurz, posunutie cakacky)
 - pouzivatel si moze nastavit default jazyk - slovencina/anglictina
 - kurzy maju svoje limity a je mozne sa prihlasit na cakacku podla poradia. Cakacka sa automaticky posuva v pripade odhlasenia prihlaseneho studenta
 # 5. funkcne oblasti
@@ -51,40 +52,25 @@ polia
 - potvrdenie hesla /mandatory
 - profilova fotka /optional
 
+## Kurzy - manazovanie
+Kurzy sluzia ako objekt alebo ako template aby mohol byt pouzity pri planovani harmonogramu kurzov
+Parametre kurzu:
+- Nazov /mandatory
+- tanecny styl /mandatory
+- level /optional, default empty
+- sala (sala 1/ sala 2) /default empty
+- instruktori (zoznam teachers + moznost pridat manualne ine meno) / default empty
+- Partnerwork/styling / default empty
+- Maximalna kapacita per pohlavie /default empty
+
+## Kurzy - planovanie
+Sluzi na planovanie kurzov do kalendara
+
 # 6. NFR
 dizajn musi byt responzivny - mobile first
 system musi byt co najviac bezpecny a GDPR compliant
 system musi byt navrhnuty, tak aby bol co najlepsi perfrormance
 system musi byt strukturovany a lahko skalovatelny
-# role
-1. student:
-prihlasovanie a odhasovanie na dostupne kurzy
-editaciu svojho profilu - osobne a prihlasovacie udaje
-2. ucitel:
-prava ako student ale moze navyse
-vstup do ucitelskej zony (zona prehladov)
-vyhladavat studentov a zobrazovat si ich verejny profil
-k studentovi do jeho neverejneho profilu pisat komentare a popisy a pridat fotku. Neverejny profil vidia len ucitelia a admini
-mozu studentovi upravovat dostupne kurzy na zaklade jeho tanecneho levelu
-v neverejnom profile vidia statistiky studenta: pocet nastivenych kurzov podla konkretneho kurzu. Rozne statsticke grafy ucasti.
-3. admin:
-moze vytvarat kurzy ktore sa budu studentom zobrazovat na dashboarde medzi dostupnymi kurzami na danny tyzden/mesiac
-vytvarat sablonu pre kurzy, ktore sa daju kopirovat
-moze odklikavat na vstup na kurzy. V danny den ma zobrazene kurzy s mennym zoznamom kurzistov a odklikne ci student prisiel alebo neprisiel
-4. super admin:
-zatial neurcene prava
-# klucove casti systemu
-planovanie kurzov: obsahuje datum a cas a dlzku, instruktorov, tanecny styl, level, salu, maximalny pocet ucastnikov, velkost cakacky
-dostupne tanecnych kurzy: Styl, Level, Popis
-statistika jednotlivca: kolko a akych hodin ma odchodenych, kolko hodin bol prihlaseny a neprisiel
-globalne statistiky: pocty ludi na jednotlivych kurzoch
-odklikavanie zucastnenych prihlasenych adminom na vstupe
-moznost spristupnovat vyssi level kurzov jednotlivym studenom
-mat neverejny profil pre studenta, ktori vidia len admini a ucitelia
-kazdy pouzivatel prechadza standatnou sign up /sign in/ forgot password auth.
-moznost exportovat vsetky emaily studentov podla roznych kriterii
-monozst odosielania systemovych emailov - napriklad ked sa kurz otvori alebo neotvori
-
 
 
 
