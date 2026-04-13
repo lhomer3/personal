@@ -13,20 +13,28 @@ Webova aplikacia pre manazovanie kurzov a prihlasovanie sa na kurzy tanecnej sko
 - admin
 - superadmin
 # 4. core features
-users si mozu vytvarat a manazovat svoje pouzivatelske ucty
-student sa moze prihlasit/odhlasit na dostupne kurzy
-admin moze vytvarat tanecne kurzy ako objekt(template) s parametrami
-kurzy maju level podla ktoreho su alebo nie su dostupne studentom
-admin moze planovat tanecne kurzy do rozvrhu
-admin moze kontrolovat dochadzku ziakov cez admin UI
-admin ma dostupne rozne typy prehladov a statistik
-teacher a admin vidia neverejnu cast profilu ziakov na zdielanie internych informacii
-pouzivatelia mozu dostavat email notifikacie
-pouzivatelia mozu dostavat push notifikacie
-pouzivatel si moze nastavit default jazyk - slovencina/anglictina
+- users si mozu vytvarat a manazovat svoje pouzivatelske ucty
+- student sa moze prihlasit/odhlasit na dostupne kurzy
+- admin moze vytvarat tanecne kurzy ako objekt(template) s parametrami
+- kurzy maju level podla ktoreho su alebo nie su dostupne studentom
+- admin moze planovat tanecne kurzy do rozvrhu
+- admin moze kontrolovat dochadzku ziakov cez admin UI
+- admin ma dostupne rozne typy prehladov a statistik
+- teacher a admin vidia neverejnu cast profilu ziakov na zdielanie internych informacii
+- pouzivatelia mozu dostavat email notifikacie
+- pouzivatelia mozu dostavat push notifikacie
+- pouzivatel si moze nastavit default jazyk - slovencina/anglictina
 # 5. funkcne oblasti
+## Student
+
 ## Admin
-fdsaf
+Admin sekcia obsahuje sekcie
+- prehlady: rozne typy globalnych prehladov a statistik
+- kurzy: vytvaranie a manazovanie kurzov objekt/template
+- planovanie: vkladanie kurzov do kalendara - pohlad podla dna/tyzdna/mesiac
+- dochadzka: prehlad prihlasenych ludi na kurzy v ten den s moznostou potvrdenia prichodu alebo vymeskania. Moznost manualne pridat studenta. Studen je automaticky "Paying/platiaci" ale je mozne zmenit studenta na "help/vypomoc"
+- studenti: zoznam vsetkych registrovanych studentov. Po kliknuti na studenta sa zobrazi jeho verejny aj neverejny profil.
+
 
 
 # NFR
