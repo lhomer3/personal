@@ -14,6 +14,7 @@ Webova aplikacia pre manazovanie kurzov a prihlasovanie sa na kurzy tanecnej sko
 - superadmin
 # 4. core features
 - users si mozu vytvarat a manazovat svoje pouzivatelske ucty
+- user si moze menit heslo
 - student sa moze prihlasit/odhlasit na dostupne kurzy
 - admin moze vytvarat tanecne kurzy ako objekt(template) s parametrami
 - kurzy maju level podla ktoreho su alebo nie su dostupne studentom
@@ -24,20 +25,33 @@ Webova aplikacia pre manazovanie kurzov a prihlasovanie sa na kurzy tanecnej sko
 - pouzivatelia mozu dostavat email notifikacie
 - pouzivatelia mozu dostavat push notifikacie
 - pouzivatel si moze nastavit default jazyk - slovencina/anglictina
+- kurzy maju svoje limity a je mozne sa prihlasit na cakacku podla poradia. Cakacka sa automaticky posuva v pripade odhlasenia prihlaseneho studenta
 # 5. funkcne oblasti
-## Student
+## home page
+- menu, ktore obsahuje ine sekcie
+- pouzivatelsky profil
+- notifikacne centrum (zvoncek)
+- zoznam dostupnych kurzov na prihlasenie
 
-## Admin
-Admin sekcia obsahuje sekcie
-- prehlady: rozne typy globalnych prehladov a statistik
-- kurzy: vytvaranie a manazovanie kurzov objekt/template
-- planovanie: vkladanie kurzov do kalendara - pohlad podla dna/tyzdna/mesiac
-- dochadzka: prehlad prihlasenych ludi na kurzy v ten den s moznostou potvrdenia prichodu alebo vymeskania. Moznost manualne pridat studenta. Studen je automaticky "Paying/platiaci" ale je mozne zmenit studenta na "help/vypomoc"
-- studenti: zoznam vsetkych registrovanych studentov. Po kliknuti na studenta sa zobrazi jeho verejny aj neverejny profil.
+## podsekcie dotupne iba pre admina ucitela - nesmie byt viditelne studentom
+- prehlady (admin/teacher): rozne typy globalnych prehladov a statistik. Rozne podsekcie prehladov budu pristupne podla role
+- kurzy (admin): vytvaranie a manazovanie kurzov objekt/template
+- planovanie (admin): vkladanie kurzov do kalendara - pohlad podla dna/tyzdna/mesiac
+- dochadzka (admin): prehlad prihlasenych ludi na kurzy v ten den s moznostou potvrdenia prichodu alebo vymeskania. Moznost manualne pridat studenta. Student je automaticky "Paying/platiaci" ale je mozne zmenit studenta na "help/vypomoc"
+- studenti (admin/teacher): zoznam vsetkych registrovanych studentov. Po kliknuti na studenta sa zobrazi jeho verejny aj neverejny profil.
 
+# 6. Detailna specifikacia klucovych funkcnych oblasti
+## Vytvorenie profilu pouzivatela
+polia
+- prve meno /mandatory
+- druhe meno / mandatory
+- muz(leader) alebo zena(follower) /mandatory
+- email /mandatory
+- heslo /mandatory
+- potvrdenie hesla /mandatory
+- profilova fotka /optional
 
-
-# NFR
+# 6. NFR
 dizajn musi byt responzivny - mobile first
 system musi byt co najviac bezpecny a GDPR compliant
 system musi byt navrhnuty, tak aby bol co najlepsi perfrormance
