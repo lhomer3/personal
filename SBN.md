@@ -66,6 +66,15 @@ Parametre kurzu:
 ## Kurzy - planovanie
 Sluzi na planovanie kurzov do kalendara
 
+## Prehlady a reporty
+- pocet kurzov za casovy interval
+- pocet ucastnikov za casovy interval
+- pocet pouzivatelov v systeme
+- rozlozenie ludi na kurzoch casovy interval (kolacovy graf) - podla typov kurzov
+- ludia s vysmeskanou dochadzkou podla poctu zmeskanych hodin
+- prehlad ziakov
+- statistiky nastevnosti kurzov pre zvoleneho ziaka
+
 # 6. NFR
 dizajn musi byt responzivny - mobile first
 system musi byt co najviac bezpecny a GDPR compliant
