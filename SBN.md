@@ -76,10 +76,13 @@ Sluzi na planovanie kurzov do kalendara
 - statistiky nastevnosti kurzov pre zvoleneho ziaka
 
 # 6. NFR
-dizajn musi byt responzivny - mobile first
-system musi byt co najviac bezpecny a GDPR compliant
-system musi byt navrhnuty, tak aby bol co najlepsi perfrormance
-system musi byt strukturovany a lahko skalovatelny
+- system musi byt co najviac bezpecny a GDPR compliant
+- system musi byt navrhnuty, tak aby bol co najlepsi perfrormance
+- system musi byt strukturovany a lahko skalovatelny
+
+# 7. Dizajn a vizual
+- dizajn musi byt responzivny - mobile first pre rolu ucitel a ziak. Web desktop first pre admin.
+- dizajn musi byt moderny/cool - mladeznicky, sviezy ale zaroven prehladny
 
 
 
