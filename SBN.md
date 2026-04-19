@@ -84,6 +84,10 @@ Sluzi na planovanie kurzov do kalendara
 - dizajn musi byt responzivny - mobile first pre rolu ucitel a ziak. Web desktop first pre admin.
 - dizajn musi byt moderny/cool - mladeznicky, sviezy ale zaroven prehladny
 
+# Notes
+- pridat moznost aj pre zaciatocnikov uplnych aby sa prihlasili
+- kurz musi mat samostatnu URL alebo moznost poslat nan link
+
 
 
 
